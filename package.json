@@ -1,40 +1,40 @@
 {
-  "name": "hooks",
-  "description": "Adds pre and post hook functionality to your JavaScript methods.This is a re-write of the original with different behaviour!",
-  "version": "0.4.0",
-  "keywords": [
-    "node",
-    "hooks",
-    "middleware",
-    "pre",
-    "post"
-  ],
-  "homepage": "https://github.com/bnoguchi/hooks-js/",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/bnoguchi/hooks-js.git"
-  },
-  "author": "Brian Noguchi <brian.noguchi@gmail.com> (https://github.com/bnoguchi/)",
-  "main": "./hooks.js",
+  "name": "hooks-js",
+  "version": "1.0.0",
+  "description": "hooks ============",
+  "main": "hooks.js",
   "directories": {
-    "lib": "."
-  },
-  "scripts": {
-    "test": "make test"
+    "test": "test"
   },
   "dependencies": {
-    "underscore": ">=1.1.4"
+    "@adsk/lynx-utils": "git+ssh://git@git.autodesk.com:LYNX/LynxUtils.git"
   },
   "devDependencies": {
-    "expresso": ">=0.7.6",
-    "should": ">=0.2.1",
-    "underscore": ">=1.1.4"
+    "@adsk/module-robot": "git+ssh://git@git.autodesk.com:LYNX/module-robot.git",
+    "async": "^2.0.0",
+    "mocha": "^2.5.3",
+    "should": "^10.0.0"
   },
-  "engines": {
-    "node": ">=0.4.0"
+  "scripts": {
+    "test": "expresso test"
   },
-  "licenses": [
-    "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackquack/hooks-js.git"
+  },
+  "keywords": [
+    "middleware"
   ],
-  "optionalDependencies": {}
+  "author": "Autodesk Inc.",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jackquack/hooks-js/issues"
+  },
+  "homepage": "https://github.com/jackquack/hooks-js#readme",
+  "moduleFolders": [
+    {
+      "path": "src",
+      "allowClientSide": false
+    }
+  ]
 }
