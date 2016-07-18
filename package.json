@@ -1,5 +1,5 @@
 {
-  "name": "hooks-js",
+  "name": "async-hooks",
   "version": "1.0.0",
   "description": "hooks ============",
   "main": "hooks.js",
